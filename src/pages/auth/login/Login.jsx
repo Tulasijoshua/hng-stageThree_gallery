@@ -18,11 +18,13 @@ const Login = () => {
         if(type == 'Signup') {
             createUserWithEmailAndPassword(auth, email, password).then(data => {
                 console.log(data, "signup");
-                navigate('/')
+                // navigate('/')
+                setLogin(true)
+
             }).catch(err => {
                 alert(err)
                 console.log(err)
-                // setLogin(true)
+                setLogin(true)
             })
 
         } else {
