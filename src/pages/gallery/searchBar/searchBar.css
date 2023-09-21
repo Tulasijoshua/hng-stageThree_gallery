@@ -1,0 +1,218 @@
+.search-main {
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    z-index: 1;
+}
+
+.search-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.search-img {
+    width: 100%;
+    height: 250px;
+}
+
+.search-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlapping {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.logout {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    cursor: pointer;
+}
+
+.logout button {
+    padding: .5rem 1rem;
+    background-color: #5b44f7;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-section {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.search-inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-inputbox .search-inputbox_search{
+    padding: .9rem .8rem;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+.search-input_icon {
+    padding: .8rem 1.2rem;
+    background-color: #5b44f7;
+    cursor: pointer;
+}
+
+.search-input_icon input {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #5b44f7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .logout button {
+        padding: .3rem .7rem;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    
+    .search-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .search-inputbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-inputbox .search-inputbox_search{
+        padding: .6rem .8rem;
+        font-size: 14px;
+    }
+    
+    .search-input_icon {
+        padding: .5rem 1rem;
+    }
+    
+    .search-input_icon input {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-main {
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .search-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .overlapping {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .logout {
+        top: -10%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 450px) {
+    .search-main {
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .search-img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .overlapping {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .logout {
+        top: -15%;
+    }
+
+    .logout button {
+        font-size: 12px;
+    }
+
+    .search-section {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+    }
+
+    .search-input {
+        margin-top: 2rem;
+    }
+    
+    .search-inputbox .search-inputbox_search{
+        padding: .4rem .4rem;
+        font-size: 10px;
+    }
+    
+    .search-input_icon {
+        padding: .1rem .7rem;
+    }
+    
+    .search-input_icon input {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+}

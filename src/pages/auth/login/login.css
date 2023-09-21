@@ -1,0 +1,293 @@
+.main-login {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.login-container {
+    width: 85%;
+    height: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.login-section {
+    flex: 1;
+    padding: 3rem 0;
+    /* background: #fff; */
+}
+
+.center-login {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.login-name {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.login-name h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.login-name p{
+    font-size: 13px;
+}
+
+.email-alignment {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.email-alignment .left-line {
+    width: 25%;
+    height: 2px;
+    background: #f4f4f4;
+}
+.email-alignment .line-text {
+    font-size: 13px;
+    padding: 0 10px;
+}
+.email-alignment .right-line {
+    width: 25%;
+    height: 2px;
+    background: #f4f4f4;
+}
+
+.main-form {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .7rem;
+}
+
+.form-detail label {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.form-detail input {
+    padding: .7rem;
+    font-size: 15px;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #3521B5;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 2rem;
+    padding: .7rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.img-section {
+    flex: 1;
+    width: 100%;
+    
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+}
+
+.img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.pointer {
+    color: #3521B5;
+    cursor: pointer;
+}
+
+.displayNone {
+    display: none;
+}
+
+.signup-in {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+    .center-login {
+        width: 70%;
+        margin: 0 auto;
+    
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .center-login {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .img-section {
+        display: none;   
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .center-login {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .img-section {
+        display: none;   
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .center-login {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .center-login {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .login-name {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .login-name h2 {
+        font-size: 1.2rem;
+        padding-bottom: .7rem;
+    }
+    
+    .login-name p{
+        font-size: 10px;
+    }
+
+    .email-alignment .line-text {
+        font-size: 11px;
+        padding: 0 8px;
+    }
+
+    .form-detail {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .7rem;
+    }
+    
+    .form-detail label {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: .4rem;
+    }
+    
+    .form-detail input {
+        padding: .5rem;
+        font-size: 12px;
+        border-radius: 1rem;
+        outline: none;
+    }
+    
+    .btn-submit {
+        font-size: 16px;
+        border-radius: 1.2rem;
+        padding: .5rem;
+    }
+
+    .signup-in {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .displayNone {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+    .center-login {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .login-name {
+        width: 100%;
+        margin-bottom: .7rem;
+    }
+    
+    .login-name h2 {
+        font-size: 1rem;
+        padding-bottom: .5rem;
+    }
+    
+    .login-name p{
+        font-size: 8px;
+    }
+
+    .email-alignment .line-text {
+        font-size: 8px;
+        padding: 0 8px;
+    }
+
+    .form-detail {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+    
+    .form-detail label {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: .4rem;
+    }
+    
+    .form-detail input {
+        padding: .5rem;
+        font-size: 10px;
+        border-radius: .7rem;
+        outline: none;
+    }
+    
+    .btn-submit {
+        font-size: 12px;
+        border-radius: .7rem;
+        padding: .5rem;
+    }
+
+    .signup-in {
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+    .displayNone {
+        display: none;
+    }
+
+}
