@@ -1,6 +1,6 @@
 .search-main {
     width: 100%;
-    height: 20%;
+    height: 15%;
     position: fixed;
     z-index: 1;
 }
@@ -14,7 +14,7 @@
 
 .search-img {
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 
 .search-img img {
@@ -25,7 +25,7 @@
 
 .overlapping {
     width: 100%;
-    height: 250px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -77,12 +77,14 @@
     border: none;
     font-size: 16px;
     background-color: #f4f4f4;
+    border-radius: 5px 0 0 5px;
 }
 
 .search-input_icon {
     padding: .8rem 1.2rem;
     background-color: #5b44f7;
     cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }
 
 .search-input_icon input {
@@ -141,7 +143,7 @@
 
     .search-img {
         width: 100%;
-        height: 200px;
+        height: 170px;
     }
 
     .overlapping {
@@ -207,7 +209,7 @@
     }
     
     .search-input_icon {
-        padding: .1rem .7rem;
+        padding: .3rem .7rem;
     }
     
     .search-input_icon input {

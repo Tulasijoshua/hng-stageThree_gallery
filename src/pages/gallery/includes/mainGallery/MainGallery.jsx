@@ -4,9 +4,9 @@ import { useGalleryContext } from '../../../../context/galleryContext'
 import { GALLERY } from '../../../../GalleryImages';
 
 const MainGallery = () => {
-  const [galleryImage, setGalleryImage] = useState(GALLERY);
+  const [galleryImage, setGalleryImage] = useState(galleryImages);
   const [isDragging, setIsDragging] = useState(false);
-  const {search, setSearch, isLoading} = useGalleryContext();
+  const {galleryImages, search, setSearch, isLoading} = useGalleryContext();
 
   const filters = galleryImage.filter((item) => {
     return search.toLowerCase() === '' ? item : item.tagName.toLowerCase().includes(search);
@@ -14,24 +14,18 @@ const MainGallery = () => {
 
   const dragItem = useRef(null)
   const dragOverItem = useRef(null)
-  // const { galleryImages } = useGalleryContext();
   console.log(galleryImage);
 
   const handleSort = () => {
-    //duplicate items
     let _galleryImage = [...galleryImage]
 
-    //remove and save the dragged item content
     const draggedItemContent = _galleryImage.splice(dragItem.current, 1)[0]
 
-    //switch the position
     _galleryImage.splice(dragOverItem.current, 0, draggedItemContent)
 
-    //reset the position ref
     dragItem.current = null
     dragOverItem.current = null
 
-    //update the actual array
     setGalleryImage(_galleryImage)
     setIsDragging(false);
   }

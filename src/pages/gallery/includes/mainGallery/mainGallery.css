@@ -6,7 +6,7 @@
     font-size: 15px;
     background: #f4f4f4;
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 0;
     z-index: 0.9;
 }
@@ -139,7 +139,7 @@
 
 @media only screen and (max-width: 768px) {
     .main-gallery {
-        top: 200px;
+        top: 170px;
     }
 
     .gallery-card {
