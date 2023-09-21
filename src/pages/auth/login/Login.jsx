@@ -42,11 +42,11 @@ const Login = () => {
                         <div></div>
                         <div className='login-name'>
                             <h2>{login ? 'Sign In' : 'Sign Up'}</h2>
-                            <p>Sign up and view an amazing gallery of pictures</p>
+                            <p>{login ? 'Sign in' : 'Sign up'} and view an amazing gallery of pictures</p>
                         </div>
                         <div className='email-alignment'>
                             <div className='left-line'></div>
-                            <div className='line-text'>Sign up with Email</div>
+                            <div className='line-text'>{login ? 'Sign in' : 'Sign up'} with Email</div>
                             <div className='right-line'></div>
                         </div>
                         <div className='main-form'>
