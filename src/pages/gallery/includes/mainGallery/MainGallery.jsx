@@ -4,7 +4,7 @@ import { useGalleryContext } from '../../../../context/galleryContext'
 import { GALLERY } from '../../../../GalleryImages';
 
 const MainGallery = () => {
-  const [galleryImage, setGalleryImage] = useState(galleryImages);
+  const [galleryImage, setGalleryImage] = useState(GALLERY);
   const [isDragging, setIsDragging] = useState(false);
   const {galleryImages, search, setSearch, isLoading} = useGalleryContext();
 
