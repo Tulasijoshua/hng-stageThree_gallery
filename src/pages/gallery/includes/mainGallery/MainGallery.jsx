@@ -6,7 +6,7 @@ import { GALLERY } from '../../../../GalleryImages';
 const MainGallery = () => {
   const [galleryImage, setGalleryImage] = useState(GALLERY);
   const [isDragging, setIsDragging] = useState(false);
-  const {search, setSearch} = useGalleryContext();
+  const {search, setSearch, isLoading} = useGalleryContext();
 
   const filters = galleryImage.filter((item) => {
     return search.toLowerCase() === '' ? item : item.tagName.toLowerCase().includes(search);
@@ -35,6 +35,12 @@ const MainGallery = () => {
     setGalleryImage(_galleryImage)
     setIsDragging(false);
   }
+
+  if (isLoading) {
+    return <div className='text-center text-4xl font-bold'> 
+        <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+     </div>
+}
 
   return (
     <div className='main-gallery'>
